@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Asap&family=Black+Han+Sans&family=Faster+One&family=Inter&family=Lexend+Deca:wght@600&family=Manrope&family=Nosifer&family=Orienta&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,900&family=Russo+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+#genel{
+    width: 100%;
+    height: 100vh;
+    background-color: #f1f1f1;
+}
+
+.navbar{
+    width: 100%;
+    height: 70px;
+    background-color: #fff;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.05);
+    border: 1px solid #f2e5da;
+}
+
+.navbar .icerik{
+    max-width: 1200px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.navbar .icerik ul{
+    display: flex;
+}
+
+.navbar .icerik ul li{
+    padding: 0 20px;
+}
+
+.kutular i{
+    
+}
+
+.orta{
+    width: 100%;
+}
+
+.orta .icerik{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.orta .icerik .kartlar img{
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.05);
+    border: 1px solid #f2e5da;
+    cursor: pointer;
+}
+
+.orta .icerik .kartlar{
+    display: flex;
+}
+
+.orta .icerik .kartlar .div{
+    width: 400px;
+    position: relative;
+}
+
+.orta .icerik .kartlar .div p{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+    border-bottom-left-radius: 5px;
+    padding: 5px;
+    color: #fff;
+}
+
+.yazilar{
+    margin-left: 10px;
+}
+
+.yazilar .h2{
+    font-size: 20px;
+}
+
+.yazilar p{
+    margin: 10px 0;
+    color: #6c6a6a;
+}
+
+.yazilar .h21{
+    font-size: 30px;
+    font-weight: 500;
+    margin: 20px 0;
+}
+
+.kart{
+    display: flex;
+}
+
+#urunal{
+    margin-right: 20px;
+    padding: 10px 40px;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.05);
+    border: 1px solid #aeaeae;
+    cursor: pointer;
+    background-color: #f0e9e9;
+}
+
+#urunal:hover{
+    border: 1px solid #0f0f0f;
+    background-color: #ffffff;
+}
+
+#urunal:active{
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.05);
+    border: 1px solid #383737;
+}
+
+#urunsil{
+    display: none;
+    padding: 10px 40px;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.05);
+    border: 1px solid #aeaeae;
+    cursor: pointer;
+}
+
+#urunsil:hover{
+    border: 1px solid #0f0f0f;
+    background-color: #ffffff;
+}
+
+#urunsil:active{
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.05);
+    border: 1px solid #383737;
+}
+
+.ozellik{
+    margin-left: 10px;
+    margin: 20px 0;
+}
+
+.ozellik h2{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.ozellik .div .iki{
+    background-color: #2e2d2d;
+    border-radius: 5px;
+    padding: 7px 20px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.05);
+    border: 1px solid #383737;
+    color: #fff;
+    font-weight: bold;
+}
+
+.ozellik .div .iki span{
+    color: #fff;
+    padding-left: 5px;
+}
+
+.ozellik .div .bir{
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 7px 20px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.05);
+    border: 1px solid #383737;
+    color: #0f0f0f;
+}
+
+.ozellik .div .bir span{
+    color: #0f0f0f;
+    padding-left: 5px;
+    font-weight: bold;
+}
+
+.teslim{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.teslim h2{
+    color: #413d3d;
+}
+
+.teslim h2 span{
+    color: #0f0f0f;
+    padding-left: 5px;
+}
+
+#acilir-kutu {
+    margin-right: 20px;
+    padding: 10px 40px;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.05);
+    border: 1px solid #aeaeae;
+    cursor: pointer;
+    background-color: #fff;
+    color: #0f0f0f;
+    font-weight: bold;
+    position: relative;
+}
+
+#ozellikler{
+    display: none;
+    z-index: 999;
+    width: 300px;
+    background-color: #6c6a6a;
+    padding: 10px;
+    position: absolute;
+    top: 20%;
+    left: 65%;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.05);
+    border: 1px solid #aeaeae;
+}
+
+#times{
+    cursor: pointer;
+    position: absolute;
+    right: 10%;
+    top: 4%;
+    font-size: 25px;
+    color: #fff;
+}
+
+#ozellikler h2{
+    padding: 5px 0;
+    color: #fff;
+}
+
+#ozellikler p{
+    padding: 5px 0;
+    color: #fff;
+}
+
+#menu{
+    display: none;
+}
+
+#bars{
+    display: none;
+}
+
+#times1{
+    display: none;
+}
+
+#acik-menu1{
+    display: none;
+}
+
+.genel{
+    display: none;
+}
+
+@media(max-width: 900px){
+html,body{
+    overflow-x: hidden;
+}
+
+#genel{
+    height: 100%;
+}
+
+.navbar .icerik{
+    padding: 0 25px;
+}
+
+.navbar .icerik h2{
+    font-size: 18px;
+}
+
+#kutu{
+    font-size: 18px;
+}
+
+#acik-menu1{
+    font-size: 18px;
+}
+
+.navbar .icerik ul{
+    display: none;
+}
+
+.orta{
+    width: 100%;
+}
+
+.orta .icerik{
+    text-align: center;
+}
+
+.orta .icerik .kartlar .div {
+    width: 100%;
+}
+
+.orta .icerik .kartlar img{
+    width: 80%;
+}
+
+.orta .icerik .kartlar .div p{
+    top: 0;
+    right: 10%;
+}
+
+.kartlar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.yazilar{
+    text-align: left;
+    padding: 5px 6px;
+}
+
+.yazilar .h2{
+    text-align: center;
+}
+
+#ozellikler{
+    display: none;
+    z-index: 999;
+    width: 300px;
+    background-color: #6c6a6a;
+    padding: 10px;
+    position: absolute;
+    top: 30%;
+    left: 13.5%;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.05);
+    border: 1px solid #aeaeae;
+}
+
+#times{
+    cursor: pointer;
+    position: absolute;
+    right: 10%;
+    top: 4%;
+    font-size: 25px
+}
+
+#acilir-kutu{
+    margin-bottom: 20px;
+}
+
+
+
+
+/* 
+#menu{
+    display: block;
+} */
+
+#bars{
+    display: block;
+}
+
+#times1{
+    display: none;
+    font-size: 25px;
+    color: #0f0f0f;
+    margin-left: 50px;
+}
+
+#menu{
+    display: none;
+    background-color: #fff;
+    position: absolute;
+    top: 8%;
+    right: 30%;
+    z-index: 999;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.05);
+    border: 1px solid #aeaeae;
+}
+
+#menu li{
+    padding: 8px 10px;
+    font-size: 16px;
+}
+
+#acik-menu1{
+    display: block;
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+/* .genel{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+} */
+
+}
